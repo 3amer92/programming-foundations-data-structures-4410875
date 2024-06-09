@@ -2,14 +2,11 @@
 # a given unsorted list, else False
 
 def diff(my_list):
-  index = 0
-  for item in my_list:
-    index += 1
-    if index == len(my_list): # To not exceed the range
-      return False
-    next_item = my_list[index]
-    if item - next_item == 1:
+
+  for i in range(1, len(my_list)):
+    if my_list[i] - my_list[i-1] == 1:
       return True
+  return False
     
 
-print (diff([1,1,10,2,5,6,4,6,5]))
+print (diff([1,1,10,2,5,7,4,6,7]))

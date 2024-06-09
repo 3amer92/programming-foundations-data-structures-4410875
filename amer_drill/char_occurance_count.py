@@ -1,4 +1,4 @@
-# Givin list of string, find the number of times each character occurs
+# Givin a string, find the number of times each character occurs
 
 
 def char_occurance_count(string):
